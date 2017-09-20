@@ -1,0 +1,43 @@
+/*phone things*/	
+
+@media only screen and (max-device-width: 480px)  {
+ 	
+ 	.container {
+ 		display: none;
+ 		height: 0;
+ 	}
+ 	body {
+		background: black;
+		background-position:center bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+		font-family: 'Lato', sans-serif;
+	}
+ 	.navbar {
+ 		background:none;
+ 		width:100%;
+ 		
+ 	}
+ 	
+ 	.navbar #header h1{
+		display:block;
+	}
+	.nav-social {
+		padding:10px;
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+		background: black;
+	}
+	.navbar-links {
+		display: none;
+	}
+	.container #dates {
+		display: block;
+	}
+
+	#myFoot {
+		display: none;
+	}
+}

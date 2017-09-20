@@ -1,0 +1,210 @@
+<!-- THINGS TO FINISH:
+	make album covers opaque
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>xUANrONG|MYTRY</title>
+    <link rel="icon" href="img/bushkaIcon.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/thumbnail-gallery-copy.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    
+    <!--css and js for flip and hover effects-->
+    <script src="js/flip.js"></script>
+    <script src="js/audio.js"></script>
+    
+    <!--hover image effects from https://miketricking.github.io/dist/#-->
+    <link href="css/hoverTwelve.css" rel="stylesheet">
+    <link href="css/hoverSeven.css" rel="stylesheet">
+    <link href="css/hoverEleven.css" rel="stylesheet">
+    <link href="css/hoverThirteen.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/c0f57ff52b.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>    
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div id="header"><h1>xuan</h1><h1>rong</h1></div>
+		<ul class="navbar-links">
+			<li><a href="#about">About</a></li>
+        	<li><a href="#bushka">Music</a></li>
+        	<li><a href="#dates">Shows</a></li>
+        	<li><a href="#press">Press</a></li>
+    		<li><a href="#social">Social</a></li>
+    		<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div class="nav-social">
+        	<a target="_blank" href="https://facebook.com/xuanrongmusic"><img src="icons/png/facebook-letter-logo.png"/></a>
+            <a target="_blank" href="https://www.instagram.com/xuan.rk/"><img src="icons/png/instagram-big-logo.png"/></a>
+        	<a target="_blank" href="https://twitter.com/XuanRkRong"><img src="icons/png/twitter-logo-silhouette.png"/></a>
+        	<a target="_blank" href="https://soundcloud.com/xuanrong"><img src="icons/png/soundcloud-logo.png"/></a>
+        	<a target="_blank" href="http://xuanrong.bandcamp.com/"><img src="icons/png/bandcamp-logo.png"/></a>
+        	<a target="_blank" href="https://open.spotify.com/artist/5BRoZK3XvkFTAJxboCKtjW"><img height="36" src="icons/png/spotify.png"/></a>
+        </div>
+		
+	</nav>
+
+	<div class="container">
+		
+		<!--about section with a handy pronunciation title-->
+		<div id="about" class="col-sm-12 card" style="border: solid 5px white;">
+			<img class="img-responsive placeHolder" src="img/aboutSummer.jpg">
+    		<div class="hovereffectTwelve">
+        		<img class="img-responsive" src="img/aboutSummer.jpg" alt="">
+            	<div class="overlay">
+                	<h2>shw&#275;n r&#466;ng</h2>
+					<p> 
+						Xuan (shwen) Rong, stage name of NYC native Rachel Katz, combines whispery vocals and mechanical beats to create lof-fi electronic sound reminiscent of Arca or FKA Twigs. Her eclectic brand ranges from manic sugar pop pieces to dreamy R&B works. Her music brims with textures that complement each other, layered with emotions juxtaposed in ways that are startling, unexpected, and many times bewildering. Underneath the synth and bass lies a unique voice that is modern, strong, sensual, and vulnerable all at once.
+						Xuan's musical roots are steeped in the classical. She began piano lessons at age 6 and switched to violin at age 12, playing with the The InterSchool Orchestra of New York for 2 years including performances at Carnegie Hall and Lincoln Center. One day she stumbled upon a blog post by Grimes explaining how she uses Ableton and her musical style changed dramatically. She was inspired to expand beyond the classical and to build on her interest in pop music to fashion her current sound. She currently attends Oberlin College where she studies computer science and music.
+					</p>
+            	</div>
+    		</div>
+		</div>
+		
+		<!--bushka-->
+		<div id="bushka" class="col-sm-12 card">
+			<img class="img-responsive placeHolder" src="img/Bushka.jpg"/>
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="front col-sm-8 col-md-6">
+						<img class="img-responsive" src="img/Bushka.jpg"/>
+					</div>
+					<div class="back">
+						<div id="buttonGroupBushka">
+						<button class="albumTitle">BUSHKA</button>
+						<button id="dddash.wav" onclick="songName('dddash.wav', 'Bushka')" style="padding-top: 10px;"><i class="glyphicon glyphicon-play-circle"></i> dddash</button>
+						<button id="onwards.wav" onclick="songName('onwards.wav', 'Bushka')"><i class="glyphicon glyphicon-play-circle"></i> Onwards (zombie dreams)</button>
+						<button id="beHereNow.wav" onclick="songName('beHereNow.wav', 'Bushka')"><i class="glyphicon glyphicon-play-circle"></i> Be Here Now</button>
+						<button id="weak.wav" onclick="songName('weak.wav'), 'Bushka'"><i class="glyphicon glyphicon-play-circle"></i> Weak</button>
+						<button id="bushka.wav" onclick="songName('bushka.wav'), 'Bushka'"><i class="glyphicon glyphicon-play-circle"></i> Bushka</button>
+						<button id="tryHarder.wav" onclick="songName('tryHarder.wav', 'Bushka')"><i class="glyphicon glyphicon-play-circle"></i> Try Harder</button>
+						<a target="_blank" class="bandcampDL" href="https://bandcamp.com/xuanrong" style="padding-bottom: 10px; border-bottom:solid 4px white;">~~~~~Download Free at Bandcamp~~~~~</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--myria-->
+		<div id="myria" class="col-sm-12 card">
+			<img class="img-responsive placeHolder" src="img/myria.jpg" style="border: solid 5px white" />
+			<div class="flip-container">
+				<div class="flipper">
+					<div class="front col-sm-8 col-md-6">
+						<img class="img-responsive" src="img/myria.jpg" style="border: solid 5px white"/>
+					</div>
+					<div class="back">
+						<div id="buttonGroupMyria">
+						<button class="albumTitle">MYRIA</button>
+						<button id="id.wav" onclick="songName('id.wav', 'Myria')" style="padding-top: 10px;"><i class="glyphicon glyphicon-play-circle"></i> I'd</button>
+						<button id="backAndForth.wav" onclick="songName('backAndForth.wav')"><i class="glyphicon glyphicon-play-circle"></i> Back and Forth</button>
+						<button id="fluffIt.wav" onclick="songName('fluffIt.wav', 'Myria')"><i class="glyphicon glyphicon-play-circle"></i> Fluff It</button>
+						<button id="consistency.wav" onclick="songName('consistency.wav', 'Myria')"><i class="glyphicon glyphicon-play-circle"></i> Consistency</button>
+						<a target="_blank" class="bandcampDL" href="https://bandcamp.com/xuanrong" style="padding-bottom: 10px; border-bottom: solid 5px white;">~~~~~Download Free at Bandcamp~~~~~</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--dates-->
+		<div id="dates" class="col-sm-12 card">
+			<img class="img-responsive placeHolder" src="img/snazzyBee.jpg">
+    		<div class="hovereffect" style="border:solid 5px white;">
+        		<img class="img-responsive" src="img/snazzyBee.jpg" alt="">
+            	<div class="overlay">
+                	<h2>Dates</h2>
+                	<div class="date">
+						<p> no upcoming dates :( </p>
+            		</div>
+            	</div>
+    		</div>
+		</div>
+		
+		<!--press-->
+		<div id="press" class="col-sm-12 card">
+			<img class="img-responsive placeHolder" src="img/longCricket.jpg">
+    		<div class="hovereffectThirteen" style="border:solid 5px white;">
+        		<h2>Press</h2>
+        		<img class="img-responsive" src="img/longCricket.jpg" alt="">
+            	<div class="overlay" style="overflow:scroll;">	
+            		<p>Review: "Try Harder" from Bushka
+            			<a target="_blank" href="http://girlundergroundmusic.com/2015/09/02/discover-try-harder-xuan-rong-dark-electronic-from-new-york/">
+            			Read at girlunderground.com
+            			</a>
+            		</p>
+					<p> 
+						Interview: On the Record with Rachel Katz
+						<a target="_blank" target="_blank" href="http://oberlinreview.org/10206/arts/on-the-record-with-rachel-katz-electronic-musician/">
+						Read at The Oberlin Review
+						</a>
+					</p> 
+					<p> 
+						Radio interview on Organized Noise
+						<a target="_blank" target="_blank" href="https://soundcloud.com/paulusvh/xuan-rong">Listen on Soundcloud</a>
+					</p> 
+					<p> 
+						Review: "Onwards" from Bushka
+						<a target="_blank" target="_blank" href="http://diamonddeposits.tumblr.com/post/142776775918/apocalypse-pop-with-a-titanic-beat-driven">
+						Read at tumblr</a>
+					</p>  
+            	</div>
+    		</div>
+		</div>
+		
+		<!--social media icons-->
+    	<div id="social" class="col-sm-12 card">
+    		<img class="img-responsive placeHolder" src="img/bleh.png">
+    		<div class="hovereffectSeven" style="border:solid 5px white;">
+        		<img class="img-responsive" src="img/bleh.png" alt="">
+            	<div class="overlay">
+                	<h2>Social</h2>
+                	<p>
+                    	<a target="_blank" href="#">
+                        	<i class="fa fa-twitter fa-2x"></i>
+                    	</a>
+                    	<a target="_blank" href="#">
+                        	<i class="fa fa-facebook fa-2x"></i>
+                    	</a>
+                    	<a target="_blank" href="#">
+                        	<i class="fa fa-instagram fa-2x"></i>
+                    	</a>
+                    	<a target="_blank" href="#">
+                        	<i class="fa fa-soundcloud fa-2x"></i>
+                    	</a>
+                	</p>
+            	</div>
+    		</div>
+		</div>
+		
+		<div id="contact" class="col-sm-12 card">
+			<h2>Contact</h2>
+			<a href="mailto:rkatz235@gmail.com" target="_top">rkatz235@gmail.com</a>
+		</div>
+		
+	<!--./close container-->
+	</div>
+
+	<div id="myFoot">
+		<h5 id="songName"><i class="fa fa-music"></i>   dddash <i>from</i> Bushka</h5>
+		<audio id="player" src="audio/dddash.wav" controls></audio>
+		<p id="copyright">Xuan Rong &#169 2016</p>
+	</div>
+</body>
+</html>
